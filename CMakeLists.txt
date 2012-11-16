@@ -10,6 +10,10 @@ find_package(Qt4 4.5.0)
 
 add_definitions(${QT_DEFINITIONS})
 
+if(QT_NAMESPACE)
+    add_definitions(-DQT_NAMESPACE=${QT_NAMESPACE})
+endif()
+
 set(shiboken_MAJOR_VERSION "1")
 set(shiboken_MINOR_VERSION "1")
 set(shiboken_MICRO_VERSION "2")

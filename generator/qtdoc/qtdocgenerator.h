@@ -34,7 +34,7 @@
 class QtDocParser;
 class AbstractMetaFunction;
 class AbstractMetaClass;
-class QXmlStreamReader;
+QT_FORWARD_DECLARE_CLASS(QXmlStreamReader)
 class QtDocGenerator;
 
 class QtXmlToSphinx

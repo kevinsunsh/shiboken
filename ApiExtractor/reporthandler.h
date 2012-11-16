@@ -24,7 +24,9 @@
 #ifndef REPORTHANDLER_H
 #define REPORTHANDLER_H
 
-class QString;
+#include <QtCore/qglobal.h>
+
+QT_FORWARD_DECLARE_CLASS(QString)
 
 class ReportHandler
 {

@@ -27,7 +27,7 @@
 #include <QString>
 #include <QList>
 
-class QTextStream;
+QT_FORWARD_DECLARE_CLASS(QTextStream)
 
 class Include
 {

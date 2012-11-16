@@ -29,7 +29,9 @@
 #include "smallobject.h"
 #include "list.h"
 
-class QString;
+#include <QtCore/qglobal.h>
+
+QT_FORWARD_DECLARE_CLASS(QString)
 
 #define DECLARE_AST_NODE(k) \
     enum { __node_kind = Kind_##k };

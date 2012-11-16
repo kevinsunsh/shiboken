@@ -30,7 +30,7 @@
 #include <QStringList>
 
 class AbstractMetaBuilder;
-class QIODevice;
+QT_FORWARD_DECLARE_CLASS(QIODevice)
 
 class ApiExtractor
 {

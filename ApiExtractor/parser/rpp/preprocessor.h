@@ -29,7 +29,7 @@
 #include <QtCore/qstring.h>
 #include <QtCore/qstringlist.h>
 
-class QByteArray;
+QT_FORWARD_DECLARE_CLASS(QByteArray)
 class PreprocessorPrivate;
 
 class Preprocessor

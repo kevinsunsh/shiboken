@@ -30,8 +30,8 @@
 
 #include "codemodel.h"
 
-class QString;
-class QStringList;
+QT_FORWARD_DECLARE_CLASS(QString)
+QT_FORWARD_DECLARE_CLASS(QStringList)
 struct TypeSpecifierAST;
 struct DeclaratorAST;
 class TokenStream;

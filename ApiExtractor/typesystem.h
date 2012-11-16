@@ -38,7 +38,7 @@
 class Indentor;
 
 class AbstractMetaType;
-class QTextStream;
+QT_FORWARD_DECLARE_CLASS(QTextStream)
 
 class EnumTypeEntry;
 class FlagsTypeEntry;
