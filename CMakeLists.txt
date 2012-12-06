@@ -19,6 +19,15 @@ set(shiboken_MINOR_VERSION "1")
 set(shiboken_MICRO_VERSION "2")
 set(shiboken_VERSION "${shiboken_MAJOR_VERSION}.${shiboken_MINOR_VERSION}.${shiboken_MICRO_VERSION}")
 
+option(ENABLE_VERSION_SUFFIX "Used to use current version in suffix to generated files. This is used to allow multiples versions installed simultaneous." FALSE)
+if(QT_NAMESPACE)
+    set(shiboken_SUFFIX "-${shiboken_MAJOR_VERSION}.${shiboken_MINOR_VERSION}-${QT_NAMESPACE}")
+elseif(ENABLE_VERSION_SUFFIX)
+    set(shiboken_SUFFIX "-${shiboken_MAJOR_VERSION}.${shiboken_MINOR_VERSION}")
+else()
+    set(shiboken_SUFFIX "")
+endif()
+
 option(BUILD_TESTS "Build tests." TRUE)
 option(USE_PYTHON3 "Use python3 libraries to build shiboken." FALSE)
 
